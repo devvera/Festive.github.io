@@ -49,6 +49,16 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+async function generateImage() {
+    const query = document.getElementById('query').value;
+    const response = await fetch(`https://api.example.com/search?query=${encodeURIComponent(query)}`);
+    const data = await response.json();
+    
+    const imageUrl = data.results[0].imageUrl;
+    const imageContainer = document.getElementById('image-container');
+    imageContainer.innerHTML = `<img src="${imageUrl}" alt="Generated Image">`;
+}
+
 
 #image-container img {
     max-width: 100%;
