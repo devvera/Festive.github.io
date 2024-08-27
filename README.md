@@ -23,3 +23,34 @@
     <script src="script.js"></script>
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+}
